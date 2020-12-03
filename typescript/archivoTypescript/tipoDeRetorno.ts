@@ -1,8 +1,8 @@
-const sumar = (a: number, b: number): number => a + b;
+const suma = (a: number, b: number): number => a + b;
 
-const nombrw = (): string => 'hola';
+const nombre = (): string => 'hola';
 
-const obterneSalrio = (): Promise<string> => {
+const obterneSalario = (): Promise<string> => {
   return new Promise((resolve, reject) => {
     resolve('nico');
   });

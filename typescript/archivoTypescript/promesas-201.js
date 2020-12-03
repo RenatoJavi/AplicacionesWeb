@@ -1,7 +1,6 @@
-"use strict";
-const retirarDinero = (montoRetirar) => {
-    let dineroActual = 1000;
-    return new Promise((resolve, reject) => {
+var retirarDinero = function (montoRetirar) {
+    var dineroActual = 1000;
+    return new Promise(function (resolve, reject) {
         if (montoRetirar > dineroActual) {
             reject('no hay fondos');
         }
@@ -12,5 +11,4 @@ const retirarDinero = (montoRetirar) => {
     });
 };
 retirarDinero(500)
-    .then((saldo) => console.log(`saldo ${saldo}`))
-    .catch((error) => console.warn(error));
+    .then(function (saldo) { return console.log("saldo " + saldo); })["catch"](function (error) { return console.warn(error); });

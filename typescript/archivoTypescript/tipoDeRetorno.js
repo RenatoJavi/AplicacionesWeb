@@ -1,7 +1,7 @@
 "use strict";
-const sumar = (a, b) => a + b;
-const nombrw = () => 'hola';
-const obterneSalrio = () => {
+const suma = (a, b) => a + b;
+const nombre = () => 'hola';
+const obterneSalario = () => {
     return new Promise((resolve, reject) => {
         resolve('nico');
     });
