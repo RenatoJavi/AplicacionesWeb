@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { ComponenteHeaderComponent } from './componentes/componente-header/componente-header.component';
 import { ComponenteBodyComponent } from './componentes/componente-body/componente-body.component';
+import { ComponenteFooterComponent } from './componentes/componente-footer/componente-footer.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { ComponenteBodyComponent } from './componentes/componente-body/component
     ComponenteHeaderComponent,
     HeaderComponent,
     ComponenteBodyComponent,
+    ComponenteFooterComponent,
   ],
   imports: [BrowserModule],
   providers: [],
