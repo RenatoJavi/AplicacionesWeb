@@ -3,13 +3,22 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-componente-body',
   templateUrl: './componente-body.component.html',
-  styleUrls: ['./componente-body.component.css']
+  styleUrls: ['./componente-body.component.css'],
 })
-export class ComponenteBodyComponent implements OnInit {
+export class ComponenteBodyComponent {
+  constructor() {}
 
-  constructor() { }
+  frase: any = {
+    mensaje: 'la perseverancia vence',
+    autor: 'soldado descocnocido',
+  };
+  mostrar = true;
 
-  ngOnInit(): void {
-  }
-
+  personajes: string[] = [
+    'Batman',
+    'Wuason',
+    'Mr frio',
+    'Hiedra',
+    'El Pinguino',
+  ];
 }

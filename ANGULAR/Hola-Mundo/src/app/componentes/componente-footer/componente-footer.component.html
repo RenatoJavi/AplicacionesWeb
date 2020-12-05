@@ -1,44 +1,72 @@
-<!-- <p>componente-footer works!</p> -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
+<head>
+    <style>
+        .all-browsers {
+            margin: 0;
+            padding: 5px;
+            background-color: lightgray;
+        }
+
+        .all-browsers>h1,
+        .browser {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .browser {
+            background: white;
+        }
+
+        .browser>h2,
+        p {
+            margin: 4px;
+            font-size: 90%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: rgb(171, 231, 31);
+            color: white;
+        }
+    </style>
+</head>
 
 <body>
-    <br />
-    <div class="card text-white bg-primary">
-        <!-- <img class="card-img-top" src="holder.js/100px180/" alt="" /> -->
-        <div class="card-body">
-            <!-- <h4 class="card-title">Title</h4> -->
-            <!-- <p class="card-text">Text</p> -->
+    <div class="container">
+        <h1>The article and footer elements + CSS</h1>
 
-            <footer class="blockquote-footer text-center">
-                <p>&copy;Javier Salazar {{ anio }}</p>
-                Someone is made anydiferent from
-                <cite title="Source Title">Ibarra</cite>
-            </footer>
-        </div>
+        <article class="all-browsers">
+            <h1>Most Popular Browsers</h1>
+            <article class="browser">
+                <h2>Google Chrome</h2>
+                <p>
+                    Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!
+                </p>
+            </article>
+            <article class="browser">
+                <h2>Mozilla Firefox</h2>
+                <p>
+                    Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.
+                </p>
+            </article>
+            <article class="browser">
+                <h2>Microsoft Edge</h2>
+                <p>
+                    Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.
+                </p>
+            </article>
+        </article>
+
+        <footer>
+            <p>
+                Author: Javier Salazar &copy;<br />
+                <a href="mailto:hege@example.com">hege@example.com</a>
+            </p>
+        </footer>
     </div>
 </body>
 
 </html>
-
-<!-- <!DOCTYPE html>
-<html>
-
-<body>
-    <h1>The footer element</h1>
-
-    <div class="card">
-        <div class="card-header">Quote</div>
-        <div class="card-body">
-            <blockquote class="blockquote mb-0">
-                <p>&copy;Javier Salazar {{ anio }}</p>
-                <footer class="blockquote-footer">
-                    Someone famous in <cite title="Source Title">Source Title</cite>
-                </footer>
-            </blockquote>
-        </div>
-    </div>
-</body>
-
-</html> -->
