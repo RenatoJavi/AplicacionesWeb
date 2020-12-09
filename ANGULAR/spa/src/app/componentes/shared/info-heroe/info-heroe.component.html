@@ -1,0 +1,30 @@
+<p>info-heroe works!</p>
+<h1>
+    {{ heroe.nombre | uppercase }}
+    <small>({{ heroe.aparicion | date: "Y" }})</small>
+</h1>
+<hr />
+<div class="rpw animated fadeIn">
+    <div class="col-md-4">
+        <img [src]="heroe.img" class="img-fluid" [alt]="heroe.Nombre" />
+        <br />
+        <a [routerLink]="['/heroes']" class="btn btn-outline-danger btn-block">REGRESAR VER HEROES</a
+    >
+  </div>
+  <div class="col-md-8"></div>
+  <h3></h3>
+  <hr />
+  <p>{{ heroe.bio }}</p>
+  <div>
+    <img
+      *ngIf="heroe.casa == 'DC'"
+      class="img-logo"
+      src="assets/imagenes/DC.jpg"
+    />
+    <img
+      *ngIf="heroe.casa !== 'DC'"
+      class="img-logo"
+      src="assets/imagenes/marvel.png"
+    />
+  </div>
+</div>
