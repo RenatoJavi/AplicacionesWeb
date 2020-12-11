@@ -1,6 +1,9 @@
-import { HeroesService } from './../../../servicios/heroes.service';
+import {
+  HeroesService,
+  HeroesTipado,
+} from './../../../servicios/heroes.service';
 import { Component, OnInit } from '@angular/core';
-import { HeroesTipado } from '../../../servicios/heroes.service';
+
 import { Router } from '@angular/router';
 
 @Component({
@@ -17,7 +20,7 @@ export class HeroesComponent implements OnInit {
 
   ngOnInit(): void {
     this.heroes = this.heroesServicio.getHeroes();
-    console.log(this.heroes);
+    console.log('Ver atributos de heroes: ', this.heroes);
   }
 
   verHeroe(indice: number): any {

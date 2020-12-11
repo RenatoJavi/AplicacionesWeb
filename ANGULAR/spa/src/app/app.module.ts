@@ -12,6 +12,7 @@ import { HeroesService } from './servicios/heroes.service';
 import { ConsultasService } from './servicios/consultas.service';
 import { InfoHeroeComponent } from './componentes/shared/info-heroe/info-heroe.component';
 import { BuscadorComponent } from './componentes/buscador/buscador.component';
+import { HeroeTarjetaComponent } from './componentes/heroe-tarjeta/heroe-tarjeta.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { BuscadorComponent } from './componentes/buscador/buscador.component';
     AboutComponent,
     InfoHeroeComponent,
     BuscadorComponent,
+    HeroeTarjetaComponent,
   ],
   imports: [BrowserModule, APP_ROUTING],
   providers: [HeroesService],

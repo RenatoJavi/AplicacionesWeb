@@ -69,18 +69,20 @@ export class HeroesService {
     return this.heroes;
   }
 
-  getHeroe(idy: string) {
-    //agarramos una posicion del arreglo
+  getHeroe(idy: string): Identificar[] {
+    // agarramos una posicion del arreglo
     return this.heroes[idy];
   }
 
   buscarHeroes(termino: string): HeroesTipado[] {
-    let heroesArr: HeroesTipado[] = [];
+    const heroesArr: HeroesTipado[] = [];
     termino = termino.toLowerCase();
 
-    for (let heroe of this.heroes) {
-      let nombre = heroe.nombre.toLowerCase();
+    for (let i = 0; i < this.heroes.length; i++) {
+      const heroe = this.heroes[i];
+      const nombre = heroe.nombre.toLowerCase();
       if (nombre.indexOf(termino) >= 0) {
+        heroe.idx = i;
         heroesArr.push(heroe);
       }
     }
@@ -93,4 +95,9 @@ export interface HeroesTipado {
   aparicion: string;
   casa: string;
   img: any;
+  idx?: number;
+}
+
+interface Identificar {
+  id: string[];
 }
