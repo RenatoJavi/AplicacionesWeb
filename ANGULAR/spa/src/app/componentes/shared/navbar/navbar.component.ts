@@ -16,8 +16,8 @@ export class NavbarComponent implements OnInit {
   rutaInfoHeroe = ['/infoHeroe/:id'];
   ngOnInit(): void {}
 
-  buscarHeroe(termino: string) {
-    //aqui ya tenemos el termino a la mano
+  buscarHeroe(termino: string): any {
+    // aqui ya tenemos el termino a la mano
     this.roter.navigate(['/buscar', termino]);
   }
 }

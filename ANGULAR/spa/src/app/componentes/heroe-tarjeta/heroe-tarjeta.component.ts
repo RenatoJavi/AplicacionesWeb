@@ -18,8 +18,8 @@ export class HeroeTarjetaComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  //@Input() // el IMPUT me dice que una propiedad va a ser recibida desde afuera
-  verHeroe() {
+  // @Input() // el IMPUT me dice que una propiedad va a ser recibida desde afuera
+  verHeroe(): any {
     // this.activarRouter.navigate(['/infoHeroe', this.indice]);
     this.router.navigate(['/infoHeroe', this.indice]); // emite el indice
   }
