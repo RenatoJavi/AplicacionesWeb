@@ -1,0 +1,14 @@
+{
+  "name": "1_led",
+  "version": "1.0.0",
+  "description": "",
+  "main": "led.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Javier Salazar",
+  "license": "ISC",
+  "dependencies": {
+    "johnny-five": "^2.0.0"
+  }
+}
