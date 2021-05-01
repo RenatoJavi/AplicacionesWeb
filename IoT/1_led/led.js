@@ -1,7 +1,7 @@
 var five = require("johnny-five");
 //var board = new five.Board();
 
-var opts = { port: "COM10" };
+var opts = { port: "COM11" };
 var board = new five.Board(opts);
 
 
