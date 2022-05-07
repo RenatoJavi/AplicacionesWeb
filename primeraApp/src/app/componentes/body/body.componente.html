@@ -10,6 +10,18 @@
           <p class="card-text"></p>
         </div>
       </div>
+
+
+
+      <div *ngIf=" mostrar"  class="card text-white bg-primary mb-3" style="max-width: 100%;">
+        <div class="card-header">{{personaje.autor2}} </div>
+        <div class="card-body">
+          <h5 class="card-title">{{personaje.frase2}}</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+
+
       <button class=" btn btn-outline-primary btn-block" (click)="mostrar=!mostrar">
     Mostrar | Ocultar
       </button>
@@ -20,8 +32,18 @@
     <h1>*ngFor</h1>
     <hr>
     <ul  class="list-group" style="width: 100%;"> 
-      <li  *ngFor=" let heroe of personajes;let i = index" class="list-group-item active" aria-current="true"> {{i+1}} {{heroe }} </li> 
+      <li  *ngFor=" let heroe of personajes;let i = index" class="list-group-item active" aria-current="true"> {{i+1}} .- {{heroe }} </li> 
     </ul>
+    </div>
+
+    <div class=" col">
+      <h1>*ngFor</h1>
+      <hr>
+            <ul class="list-group" style="width: auto;" >
+              <li  *ngFor="let villano of villanos;let i=index   "   class="list-group-item active" aria-current="true">{{i+1}} {{villano}}</li>
+
+
+            </ul>
     </div>
 
 
